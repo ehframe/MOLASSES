@@ -41,7 +41,7 @@ export params      = 2
 
 # Linking and compiling variables
 # Alter as needed for your system.
-export CC	= gcc
+export CC	= gcc -pthread -no-pie
 export INSTALLPATH	= .
 export GDAL_INCLUDE_PATH = /usr/include/gdal
 # export GDAL_LIB_PATH =
