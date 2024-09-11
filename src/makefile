@@ -36,18 +36,19 @@ else
 	LIBS = -L$(GDAL_LIB_PATH) -lpthread -lgc -lgdal -L../lib -lran -lm
 endif
 
-SRCS = driver_$(driver).c \
-initialize_$(initialize).c \
-demloader_$(DEM_loader).c \
-arrayinit_$(arrayinit).c \
-initflow_$(initflow).c \
-pulse_$(pulse).c \
-distribute_$(distribute).c \
-neighbor_$(neighbor_ID).c \
-output_$(output).c \
-set_flow_params$(params).c \
-choose_vent_$(newvent).c \
-check_vent$(check_vent).c \
+SRCS = driver_LJC2.c \
+initialize_LJC2.c \
+demloader_LJC.c \
+arrayinit_LJC.c \
+initflow_2LJC2.c \
+pulse_2LJC2.c \
+distribute_proportional2slope4_LJC2.c \
+neighbor_8.c \
+output_2LJC2.c \
+set_flow _params2.c \
+choose_vent_LJC2.c \
+check_vent2.c \
+
 # activate_$(activate).c
 
 OBJ = $(SRCS:.c=.o)
